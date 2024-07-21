@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum - Ana Julia Monti</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" type="module" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/ana.jpg" class="image" width="150" alt="Ana Julia Monti">
+        <h2>Ana Julia Monti</h2>
+        <p>
+            Graduada em Engenharia de Computação e pós-graduanda em<br>
+            Desenvolvimento Mobile e Cloud Computing
+            pelo INATEL - Instituto Nacional de Telecomunicações, <br>
+            com experiências em várias tecnologias e linguagens. <br>
+            Atualmente trabalho como Software Engineer na empresa <br>
+            WatchGuard Technologies, atuando na área de desenvolvimento mobile.<br>
+        </p>
+        <p>
+            <span>📧 anajuliamonti8@gmail.com</span><br>
+            <span>📞 (35) 99845-9839</span><br>
+            <span>📍 Santa Rita do Sapucaí, MG - Brasil</span>
+        </p>
+        <div id="image-links">
+            <a href="https://www.linkedin.com/in/ana-j%C3%BAlia-monti-888a1a141/" target="_blank">
+                <img src="images/linkedin.svg" class="icon-image" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/anamonti">
+                <img src="images/github.svg" class="icon-image" alt="GitHub" target="_blank">
+            </a>
+            <a href="https://www.facebook.com/anajulia.monti">
+                <img src="images/facebook.svg" class="icon-image" width="30" alt="Facebook" target="_blank">
+            </a>
+            <a href="https://www.instagram.com/anajuliamonti/">
+                <img src="images/instagram.svg" class="icon-image" alt="Instagram" target="_blank">
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="projects">
+                <h2>Projetos</h2>
+                <h3>Aplicativo - Inatel Acadêmico</h3>
+                <p>
+                    O aplicativo Inatel Acadêmico é um aplicativo desenvolvido pelo
+                    INATEL - Instituto Nacional de Telecomunicações com o intuito de
+                    facilitar o dia a dia do aluno, permitindo que acesse o portal do aluno e
+                    tenha acesso a: notas, frequência, avisos, calendários, etc.
+                </p>
+                <div class="project-images">
+                    <img src="images/inatel1.png" width="150" alt="Inatel Acadêmico">
+                    <img src="images/inatel2.png" width="150" alt="Inatel Acadêmico">
+                    <img src="images/inatel3.png" width="150" alt="Inatel Acadêmico">
+                </div>
+                <h3>Aplicativo - Mobile 200</h3>
+                <p>
+                    O aplicativo Mobile 200 é um aplicativo desenvolvido pela Datablink
+                    e é utilizado para MFA (Autenticação multifator), oferecendo
+                    autenticação avançada e assinatura de transações financeiras
+                    para usuários e seus bancos permitindo a prevenção de acesso
+                    não-autorizado e transações fraudulentas.
+                </p>
+                <div class="project-images">
+                    <img src="images/mob2001.png" width="150" alt="Mobile 200">
+                    <img src="images/mob2002.png" width="150" alt="Mobile 200">
+                    <img src="images/mob2003.png" width="150" alt="Mobile 200">
+                </div>
+                <h3>Aplicativo - AuthPoint</h3>
+                <p>
+                    O aplicativo AuthPoint é um aplicativo desenvolvido pela
+                    WatchGuard Technologies e utilizado para MFA (Autenticação multifator).
+                    Ele permite autenticação rápida baseada em push, bem como autenticação
+                    offline usando códigos QR com a câmera do telefone.
+                </p>
+                <div class="project-images">
+                    <img src="images/authpoint1.PNG" width="150" alt="AuthPoint">
+                    <img src="images/authpoint2.png" width="150" alt="AuthPoint">
+                    <img src="images/authpoint3.png" width="150" alt="AuthPoint">
+                </div>
+            </section>
+            <section id="skills">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>C#</li>
+                    <li>Java</li>
+                    <li>Kotlin</li>
+                    <li>Swift</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Entre em contato comigo</h2>
+                <form id="formContact" onsubmit="return false">
+                    <fieldset>
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" />
+                        <span id="name-error" class="error-message"></span>
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" />
+                        <span id="email-error" class="error-message"></span>
+
+                        <label for="phone">Telefone</label>
+                        <input type="text" name="phone" id="phone" />
+                        <span id="phone-error" class="error-message"></span>
+
+                        <label for="message">Mensagem</label>
+                        <textarea class="input-control" name="message" id="message"></textarea>
+                        <span id="message-error" class="error-message"></span>
+
+                        <button type="submit">Enviar</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
